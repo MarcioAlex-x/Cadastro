@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagens/main-image.png" type="image/x-icon">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Cadastro - Cadastro</title>
+</head>
+
+<body>
+    <main class="pagina-cadastro">
+        <header>
+            <ul class="menu-principal">
+                <a href="index.html">
+                    <li class="link-home">Home</li>
+                </a>
+                <a href="login.html">
+                    <li class="link-entrar">Login</li>
+                </a>
+                <a href="cadastro.html">
+                    <li class="link-cadastro">Cadastro</li>
+                </a>
+                <li class="link-sair">Logout</li>
+            </ul>
+        </header>
+        <h2 class="sub-titulo-cadastro">Cadastro de usuário</h2>
+        <form class="form-cadastro">
+            <label class="label-cadastro">Nome:</label>
+            <input type="text" class="input-cadastro input-nome">
+            <label class="label-cadastro">Contato:</label>
+            <input type="tel" class="input-cadastro input-contato">
+            <label class="label-cadastro">Nascimento:</label>
+            <input type="date" class="input-cadastro input-data-nascimento">
+            <label class="label-cadastro">Genero:</label>
+            <input type="text" class="input-cadastro input-genero">
+            
+            <div class="seletores">
+                <label class="label-cadastro-seletor">Aprentesco</label>
+                <select class="input-cadastro seletor select-parentesco" name="parentesco" id="select-parentesco">
+                    <option value="">Selecione uma opção</option>
+                    <option value="pai_mae" > Chefe da família</option>
+                    <option value="dependente">Dependente</option>
+                </select>
+
+                <div id="dependente">
+                <label class="label-cadastro-seletor">Dependete de:</label>
+                    <select class="input-cadastro seletor select-dependente" name="dependente" id="select-dependente">
+                        <option value="Fulano de Tal" class="input-cadastro">Fulano de Tal</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+        <h2 class="sub-titulo-cadastrados">Lista de Ususários Cadastrados</h2>
+        <div class="tabela-cadastrados">
+            <ul class="lista-usuarios"></ul>
+        </div>
+    </main>
+</body>
+
+<script type="module" src="assets/js/firebaseConfig.js"></script>
+<script type="module" src="assets/js/paginaProtegida.js"></script>
+<script type="module" src="assets/js/auth.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/database.js"></script>
+</html>

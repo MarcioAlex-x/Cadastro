@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    background-color: #485460;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.link-home, .link-entrar, .link-sair, .link-cadastro{
+    color: #d2dae2;
+    list-style: none;
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+.pagina-inicial, .pagina-login, .pagina-cadastro{
+    height: 100vh;
+    width: 960px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.pagina-inicial{
+    padding-top: 0;
+}
+
+.sub-titulo-login{
+    text-align: center;
+    color: #d2dae2;
+    padding-top: 100px;
+}
+
+.form-login{
+    width: 400px;
+    max-width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email, .input-senha{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d2dae2;
+    font-size: 18px;
+    margin-bottom: 16px;
+    caret-color: #d2dae2;
+    outline: none;
+    color: #d2dae2;
+}
+
+.btn-enviar{
+    margin-top: 16px;
+    border: none;
+    background-color: #0be881;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px;
+    font-weight: bold;
+    max-width: 100%;
+    transition: .3s;
+    font-size: 16px;
+}
+
+.btn-enviar:hover{
+    background-color: #05c46b;
+}
+
+.sub-titulo-cadastro{
+    text-align: center;
+    color: #d2dae2;
+    margin-block: 80px;
+}
+
+.form-cadastro{
+    width: 960px;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-cadastro{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    color: #d2dae2;
+    border-bottom: 1px solid #d2dae2;
+}
+
+.label-cadastro{
+    color: #d2dae2;
+}
+
+.label-cadastro-seletor{
+    display: block;
+    color: #d2dae2;
+}
+
+.seletor{
+    background-color: #485460;
+    border: none;
+}
+
+.titulo-home{
+    margin-top: 40px;
+    color: #d2dae2;
+    font-size: 32px;
+}
+
+.editar,  .excluir{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 16px;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+
+.editar{
+    background-color: #0be881;
+    color: #FFF;
+}
+
+.excluir{
+    background-color: #ff3f34;
+    color: #FFF;
+}
+
+.tabela-cadastrados{
+    width: 400px;
+    color: #d2dae2;
+    margin-top: 80px;
+    padding-block: 40px;
+    li{
+        list-style: none;
+    }
+    hr{
+        margin-block: 8px;
+    }
+}
+
+.sub-titulo-cadastrados{
+    color: #d2dae2;
+    text-align: center;
+    margin-top: 80px;
+}
+.titulo-home{
+    text-align: center;
+}
+
+/* Utilitários */
+
+.hide{
+    display: none;
+}

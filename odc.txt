@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagens/main-image.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main class="pagina-cadastro">
+        <img src="assets/imagens/main-image.png" alt="">
+        <form class="form-cadastro">
+            <input type="text">
+        </form>
+    </main>
+</body>
+
+<script type="module" src="assets/js/auth.js"></script>
+</html>
